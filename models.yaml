@@ -39,3 +39,8 @@ WizardCoder-3B:
   urls:
     huggingface: "https://huggingface.co/TabbyML/WizardCoder-3B/resolve/main/ggml/q8_0.v2.gguf"
     modelscope: "https://modelscope.cn/api/v1/models/TabbyML/WizardCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf"
+
+WizardCoder-34B:
+  chat_template: "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
+  urls:
+    huggingface: "https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF/resolve/main/wizardcoder-python-34b-v1.0.Q8_0.gguf"
