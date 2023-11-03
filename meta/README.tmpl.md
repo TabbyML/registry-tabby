@@ -1,7 +1,5 @@
 # 🧑‍🔬 Tabby Registry
 
----
-
 ## Completion models (`--model`)
 
 We recommend using
