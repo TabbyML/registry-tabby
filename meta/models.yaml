@@ -1,6 +1,8 @@
 - name: StarCoder-1B
+  provider_url: https://huggingface.co/bigcode/starcoderbase-1b
   <<: &starcoder-series
-    license: &bigcode-license https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement
+    license_name: BigCode-OpenRAIL-M
+    license_url: https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement
     prompt_template: "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>"
 
   <<: *starcoder-series
@@ -10,6 +12,7 @@
   sha256: 1bb6441486d102db03dac30c82d6b1029ee4f9f5d73f27444fa58cbfcd7cfa0f
 
 - name: StarCoder-3B
+  provider_url: https://huggingface.co/bigcode/starcoderbase-3b
   <<: *starcoder-series
   urls:
   - https://huggingface.co/TabbyML/StarCoder-3B/resolve/main/ggml/q8_0.v2.gguf
@@ -17,6 +20,7 @@
   sha256: 9798b7cba84ade7c69ff9f033d60c954e16b18f4d01829993b5fe7e33a49ba81
 
 - name: StarCoder-7B
+  provider_url: https://huggingface.co/bigcode/starcoderbase-7b
   <<: *starcoder-series
   urls:
   - https://huggingface.co/TabbyML/StarCoder-7B/resolve/main/ggml/q8_0.v2.gguf
@@ -24,8 +28,10 @@
   sha256: 33dfcc7e216f1a072b4e16cd3bb19a0e55f5874ed319416435c8fc99216b8bfa
 
 - name: CodeLlama-7B
+  provider_url: https://huggingface.co/codellama/CodeLlama-7b-hf
   <<: &codellama-series
-    license: &llama2-license https://github.com/facebookresearch/llama/blob/main/LICENSE
+    license_name: Llama 2
+    license_url: https://github.com/facebookresearch/llama/blob/main/LICENSE
     prompt_template: "<PRE> {prefix} <SUF>{suffix} <MID>"
   <<: *codellama-series
   urls:
@@ -34,6 +40,7 @@
   sha256: 2ae20aa293734400f06f0e900a843f6110604c832b94c860b5a41177492c117b
 
 - name: CodeLlama-13B
+  provider_url: https://huggingface.co/codellama/CodeLlama-13b-hf
   <<: *codellama-series
   urls:
   - https://huggingface.co/TabbyML/CodeLlama-13B/resolve/main/ggml/q8_0.v2.gguf
@@ -41,7 +48,9 @@
   sha256: bf333bc63648f0130065737e1ef98f9b49064d5bddeaca2c604d17c8b44325b7
 
 - name: Mistral-7B
-  license: https://choosealicense.com/licenses/apache-2.0/
+  provider_url: https://huggingface.co/mistralai/Mistral-7B-v0.1
+  license_name: Apache 2.0
+  license_url: https://choosealicense.com/licenses/apache-2.0/
   chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
   urls:
   - https://huggingface.co/TabbyML/Mistral-7B/resolve/main/ggml/q8_0.v2.gguf
@@ -49,7 +58,9 @@
   sha256: 5ac3ba2eecc4f41d0cd65a5e6d875d38d4c3dd4ebb1161b85e5134817b484938
 
 - name: WizardCoder-3B
-  license: *bigcode-license
+  provider_url: https://huggingface.co/WizardLM/WizardCoder-3B-V1.0
+  license_name: BigCode-OpenRAIL-M
+  license_url: https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement
   chat_template: &wizard-chat-template "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
   urls:
   - https://huggingface.co/TabbyML/WizardCoder-3B/resolve/main/ggml/q8_0.v2.gguf
@@ -57,7 +68,9 @@
   sha256: 9397dda06b86612682ec019b347d78eb4ad9ce8efeefe1366ff5483359ed8c07
 
 - name: WizardCoder-34B
-  license: *llama2-license
+  provider_url: https://huggingface.co/WizardLM/WizardCoder-3B-V1.0
+  license_name: Llama 2
+  license_url: https://github.com/facebookresearch/llama/blob/main/LICENSE
   chat_template: *wizard-chat-template
   urls:
   - https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF/resolve/main/wizardcoder-python-34b-v1.0.Q8_0.gguf
