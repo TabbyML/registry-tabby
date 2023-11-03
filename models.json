@@ -1,6 +1,7 @@
 [
   {
     "name": "StarCoder-1B",
+    "license": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
     "urls": [
       "https://huggingface.co/TabbyML/StarCoder-1B/resolve/main/ggml/q8_0.v2.gguf",
@@ -10,6 +11,7 @@
   },
   {
     "name": "StarCoder-3B",
+    "license": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
     "urls": [
       "https://huggingface.co/TabbyML/StarCoder-3B/resolve/main/ggml/q8_0.v2.gguf",
@@ -19,6 +21,7 @@
   },
   {
     "name": "StarCoder-7B",
+    "license": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
     "urls": [
       "https://huggingface.co/TabbyML/StarCoder-7B/resolve/main/ggml/q8_0.v2.gguf",
@@ -28,6 +31,7 @@
   },
   {
     "name": "CodeLlama-7B",
+    "license": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
     "urls": [
       "https://huggingface.co/TabbyML/CodeLlama-7B/resolve/main/ggml/q8_0.v2.gguf",
@@ -37,6 +41,7 @@
   },
   {
     "name": "CodeLlama-13B",
+    "license": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
     "urls": [
       "https://huggingface.co/TabbyML/CodeLlama-13B/resolve/main/ggml/q8_0.v2.gguf",
@@ -46,6 +51,7 @@
   },
   {
     "name": "Mistral-7B",
+    "license": "https://choosealicense.com/licenses/apache-2.0/",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
       "https://huggingface.co/TabbyML/Mistral-7B/resolve/main/ggml/q8_0.v2.gguf",
@@ -55,6 +61,7 @@
   },
   {
     "name": "WizardCoder-3B",
+    "license": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
       "https://huggingface.co/TabbyML/WizardCoder-3B/resolve/main/ggml/q8_0.v2.gguf",
@@ -64,6 +71,7 @@
   },
   {
     "name": "WizardCoder-34B",
+    "license": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
     "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
       "https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF/resolve/main/wizardcoder-python-34b-v1.0.Q8_0.gguf"
