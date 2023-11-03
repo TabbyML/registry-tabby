@@ -1,4 +1,4 @@
-# 🧑‍🔬 Tabby Registry
+# 🧑‍🔬 Models Registry
 
 ## Completion models (`--model`)
 
