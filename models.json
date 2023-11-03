@@ -1,6 +1,7 @@
 [
   {
     "name": "StarCoder-1B",
+    "provider_url": "https://huggingface.co/bigcode/starcoderbase-1b",
     "license_name": "BigCode-OpenRAIL-M",
     "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
@@ -12,6 +13,7 @@
   },
   {
     "name": "StarCoder-3B",
+    "provider_url": "https://huggingface.co/bigcode/starcoderbase-3b",
     "license_name": "BigCode-OpenRAIL-M",
     "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
@@ -23,6 +25,7 @@
   },
   {
     "name": "StarCoder-7B",
+    "provider_url": "https://huggingface.co/bigcode/starcoderbase-7b",
     "license_name": "BigCode-OpenRAIL-M",
     "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
@@ -34,6 +37,7 @@
   },
   {
     "name": "CodeLlama-7B",
+    "provider_url": "https://huggingface.co/codellama/CodeLlama-7b-hf",
     "license_name": "Llama 2",
     "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
@@ -45,6 +49,7 @@
   },
   {
     "name": "CodeLlama-13B",
+    "provider_url": "https://huggingface.co/codellama/CodeLlama-13b-hf",
     "license_name": "Llama 2",
     "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
@@ -56,6 +61,7 @@
   },
   {
     "name": "Mistral-7B",
+    "provider_url": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
     "license_name": "Apache 2.0",
     "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
@@ -67,6 +73,7 @@
   },
   {
     "name": "WizardCoder-3B",
+    "provider_url": "https://huggingface.co/WizardLM/WizardCoder-3B-V1.0",
     "license_name": "BigCode-OpenRAIL-M",
     "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
     "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
@@ -78,6 +85,7 @@
   },
   {
     "name": "WizardCoder-34B",
+    "provider_url": "https://huggingface.co/WizardLM/WizardCoder-3B-V1.0",
     "license_name": "Llama 2",
     "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
     "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",

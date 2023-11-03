@@ -1,4 +1,4 @@
-# 🧑‍🔬 Tabby Registry for `TabbyML` org.
+# 🧑‍🔬 Tabby Registry
 
 ---
 
@@ -11,11 +11,11 @@ We recommend using
 
 | Model ID | License |
 | -------- | ------- |
-| TabbyML/StarCoder-1B | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
-| TabbyML/StarCoder-3B | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
-| TabbyML/StarCoder-7B | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
-| TabbyML/CodeLlama-7B | [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) |
-| TabbyML/CodeLlama-13B | [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) |
+| [TabbyML/StarCoder-1B](https://huggingface.co/bigcode/starcoderbase-1b) | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
+| [TabbyML/StarCoder-3B](https://huggingface.co/bigcode/starcoderbase-3b) | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
+| [TabbyML/StarCoder-7B](https://huggingface.co/bigcode/starcoderbase-7b) | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
+| [TabbyML/CodeLlama-7B](https://huggingface.co/codellama/CodeLlama-7b-hf) | [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) |
+| [TabbyML/CodeLlama-13B](https://huggingface.co/codellama/CodeLlama-13b-hf) | [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) |
 
 
 ## Chat models (`--chat-model`)
@@ -24,6 +24,6 @@ To ensure optimal response quality, and given that latency requirements are not 
 
 | Model ID | License |
 | -------- | ------- |
-| TabbyML/Mistral-7B | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
-| TabbyML/WizardCoder-3B | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
-| TabbyML/WizardCoder-34B | [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) |
+| [TabbyML/Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| [TabbyML/WizardCoder-3B](https://huggingface.co/WizardLM/WizardCoder-3B-V1.0) | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
+| [TabbyML/WizardCoder-34B](https://huggingface.co/WizardLM/WizardCoder-3B-V1.0) | [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) |
