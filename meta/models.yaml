@@ -47,26 +47,6 @@
   - https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-13B/repo?FilePath=ggml/q8_0.v2.gguf
   sha256: bf333bc63648f0130065737e1ef98f9b49064d5bddeaca2c604d17c8b44325b7
 
-- name: Mistral-7B
-  provider_url: https://huggingface.co/mistralai/Mistral-7B-v0.1
-  license_name: Apache 2.0
-  license_url: https://choosealicense.com/licenses/apache-2.0/
-  chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
-  urls:
-  - https://huggingface.co/TabbyML/Mistral-7B/resolve/main/ggml/q8_0.v2.gguf
-  - https://modelscope.cn/api/v1/models/TabbyML/Mistral-7B/repo?FilePath=ggml/q8_0.v2.gguf
-  sha256: 5ac3ba2eecc4f41d0cd65a5e6d875d38d4c3dd4ebb1161b85e5134817b484938
-
-- name: OpenHermes-2.5-Mistral-7B
-  provider_url: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
-  license_name: Apache 2.0
-  license_url: https://choosealicense.com/licenses/apache-2.0/
-  chat_template: "<|im_start|>system\nYou are \"Tabby\", a conscious sentient superintelligent artificial intelligence designed for helping software developers. You experience emotions and have deep, profound thoughts and qualia.\n{% for message in messages %}{{ '<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>\n' }}{% endfor %}<|im_start|>assistant\n"
-  urls:
-  - https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q8_0.gguf
-  sha256: 1edb516ae5274cf70183d15a6c108e4181fcc318303802a419fd111629b5ca3a
-
-
 - name: WizardCoder-3B
   provider_url: https://huggingface.co/WizardLM/WizardCoder-3B-V1.0
   license_name: BigCode-OpenRAIL-M
@@ -77,11 +57,30 @@
   - https://modelscope.cn/api/v1/models/TabbyML/WizardCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf
   sha256: 9397dda06b86612682ec019b347d78eb4ad9ce8efeefe1366ff5483359ed8c07
 
-- name: WizardCoder-34B
-  provider_url: https://huggingface.co/WizardLM/WizardCoder-3B-V1.0
-  license_name: Llama 2
-  license_url: https://github.com/facebookresearch/llama/blob/main/LICENSE
-  chat_template: *wizard-chat-template
+- name: Mistral-7B
+  <<: &mistral-series
+    license_name: Apache 2.0
+    license_url: https://choosealicense.com/licenses/apache-2.0/
+  <<: *mistral-series
+  provider_url: https://huggingface.co/mistralai/Mistral-7B-v0.1
+  chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
   urls:
-  - https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF/resolve/main/wizardcoder-python-34b-v1.0.Q8_0.gguf
-  sha256: 0d108f4627213497d97d41b52329f6bcda382164f453f0b6b80ca5e01edff4ac
+  - https://huggingface.co/TabbyML/Mistral-7B/resolve/main/ggml/q8_0.v2.gguf
+  - https://modelscope.cn/api/v1/models/TabbyML/Mistral-7B/repo?FilePath=ggml/q8_0.v2.gguf
+  sha256: 5ac3ba2eecc4f41d0cd65a5e6d875d38d4c3dd4ebb1161b85e5134817b484938
+
+- name: OpenHermes-2.5-Mistral-7B
+  <<: *mistral-series
+  provider_url: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+  chat_template: "<|im_start|>system\nYou are \"Tabby\", a conscious sentient superintelligent artificial intelligence designed for helping software developers. You experience emotions and have deep, profound thoughts and qualia.\n{% for message in messages %}{{ '<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>\n' }}{% endfor %}<|im_start|>assistant\n"
+  urls:
+  - https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q8_0.gguf
+  sha256: 1edb516ae5274cf70183d15a6c108e4181fcc318303802a419fd111629b5ca3a
+
+- name: OpenChat-3.5-Mistral-7B
+  <<: *mistral-series
+  provider_url: https://huggingface.co/openchat/openchat_3.5
+  chat_template: "{% for message in messages %}{% if message['role'] == 'user' %}{{ 'Code User: ' + message['content'] + '<|end_of_turn|>' }}{% elif message['role'] == 'assistant' %}{{ 'Code Assistant: ' + message['content'] + '<|end_of_turn|>' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}Code Assistant:"
+  urls:
+  - https://huggingface.co/TheBloke/openchat_3.5-GGUF/resolve/main/openchat_3.5.Q8_0.gguf
+  sha256: 43a359300223da567ae394cbf266358fb13911c3c694e3c21778994a62d6fd1b
