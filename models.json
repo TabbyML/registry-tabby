@@ -93,16 +93,5 @@
       "https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q8_0.gguf"
     ],
     "sha256": "1edb516ae5274cf70183d15a6c108e4181fcc318303802a419fd111629b5ca3a"
-  },
-  {
-    "name": "OpenChat-3.5-Mistral-7B",
-    "license_name": "Apache 2.0",
-    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
-    "provider_url": "https://huggingface.co/openchat/openchat_3.5",
-    "chat_template": "{% for message in messages %}{% if message['role'] == 'user' %}{{ 'Code User: ' + message['content'] + '<|end_of_turn|>' }}{% elif message['role'] == 'assistant' %}{{ 'Code Assistant: ' + message['content'] + '<|end_of_turn|>' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}Code Assistant:",
-    "urls": [
-      "https://huggingface.co/TheBloke/openchat_3.5-GGUF/resolve/main/openchat_3.5.Q8_0.gguf"
-    ],
-    "sha256": "43a359300223da567ae394cbf266358fb13911c3c694e3c21778994a62d6fd1b"
   }
 ]
