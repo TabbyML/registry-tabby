@@ -4,7 +4,7 @@
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base",
+    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF",
     "urls": [
       "https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF/resolve/main/deepseek-coder-5.7bmqa-base.Q6_K.gguf"
     ],
