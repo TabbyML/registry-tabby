@@ -1,6 +1,6 @@
 [
   {
-    "name": "DeepseekCoder-5.7bqma",
+    "name": "DeepseekCoder-5.7bqma-base",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
