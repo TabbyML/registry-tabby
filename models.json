@@ -1,12 +1,12 @@
 [
   {
-    "name": "DeepseekCoder-5.7bqma-base",
+    "name": "DeepseekCoder-5.7bmqa-base",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-5.7bqma-base",
+    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base",
     "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-5.7bqma-base-GGUF/resolve/main/deepseek-coder-5.7bqma-base.Q6_K.gguf"
+      "https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF/resolve/main/deepseek-coder-5.7bmqa-base.Q6_K.gguf"
     ],
     "sha256": "53a579b866027f3dd63187220d065931d68a2764d61d47b7f8cccc3c27da3198"
   },
