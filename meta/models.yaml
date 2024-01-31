@@ -19,7 +19,7 @@
   <<: *deepseek-series
   provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base
   urls:
-  - https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF/raw/main/deepseek-coder-5.7bmqa-base.Q6_K.gguf
+  - https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF/resolve/main/deepseek-coder-5.7bmqa-base.Q6_K.gguf
   sha256: 53a579b866027f3dd63187220d065931d68a2764d61d47b7f8cccc3c27da3198
 
 
@@ -28,7 +28,7 @@
   provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
 
   urls:
-  - https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/raw/main/deepseek-coder-6.7b-instruct.Q5_K_M.gguf
+  - https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q5_K_M.gguf
   sha256: 	0976ee1707fc97b142d7266a9a501893ea6f320e8a8227aa1f04bcab74a5f556
 
 # CHAT MODEL
