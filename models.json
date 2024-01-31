@@ -1,24 +1,36 @@
 [
   {
-    "name": "DeepseekCoder-5.7bmqa-base",
+    "name": "StarCoder-3B",
+    "provider_url": "https://huggingface.co/bigcode/starcoderbase-3b",
+    "license_name": "BigCode-OpenRAIL-M",
+    "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://huggingface.co/TabbyML/StarCoder-3B/resolve/main/ggml/q8_0.v2.gguf",
+      "https://modelscope.cn/api/v1/models/TabbyML/StarCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf"
+    ],
+    "sha256": "9798b7cba84ade7c69ff9f033d60c954e16b18f4d01829993b5fe7e33a49ba81"
+  },
+  {
+    "name": "DeepseekCoder-5.7bqma-base",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF",
+    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base",
     "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF/resolve/main/deepseek-coder-5.7bmqa-base.Q6_K.gguf"
+      "https://huggingface.co/TheBloke/deepseek-coder-5.7bmqa-base-GGUF/raw/main/deepseek-coder-5.7bmqa-base.Q6_K.gguf"
     ],
     "sha256": "53a579b866027f3dd63187220d065931d68a2764d61d47b7f8cccc3c27da3198"
   },
   {
-    "name": "DeepseekCoder-6.7B-Instruct",
+    "name": "DeepseekCoder-6.7B-instruct",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
     "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct",
     "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q5_K_S.gguf"
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/raw/main/deepseek-coder-6.7b-instruct.Q5_K_M.gguf"
     ],
-    "sha256": "1362c06f3036b4c4994bd8497ecbc0b487acb67e568b4addb4b17fc1e863f688"
+    "sha256": "0976ee1707fc97b142d7266a9a501893ea6f320e8a8227aa1f04bcab74a5f556"
   }
 ]
