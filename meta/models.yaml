@@ -10,7 +10,7 @@
   - https://modelscope.cn/api/v1/models/TabbyML/StarCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf
   sha256: 9798b7cba84ade7c69ff9f033d60c954e16b18f4d01829993b5fe7e33a49ba81
 
-- name: DeepseekCoder-5.7bqma-base
+- name: DeepseekCoder-5.7bmqa-base
   <<: &deepseek-series
     license_name: Deepseek License
     license_url: https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL
@@ -31,7 +31,7 @@
   - https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/raw/main/deepseek-coder-6.7b-instruct.Q5_K_M.gguf
   sha256: 	0976ee1707fc97b142d7266a9a501893ea6f320e8a8227aa1f04bcab74a5f556
 
-
+# CHAT MODEL
 # - name: OpenHermes-2.5-Mistral-7B
 #   <<: &mistral-series
 #     license_name: Apache 2.0 License
