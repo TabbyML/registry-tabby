@@ -12,7 +12,7 @@
     "sha256": "9798b7cba84ade7c69ff9f033d60c954e16b18f4d01829993b5fe7e33a49ba81"
   },
   {
-    "name": "DeepseekCoder-5.7B",
+    "name": "DeepseekCoder-5.7bmqa-base-Q8_K",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
@@ -23,7 +23,7 @@
     "sha256": "c6f97ac11bf59bd217ac0d42060ad0af07c23ef48c287345937cd26cd8738dfa"
   },
   {
-    "name": "DeepseekCoder-6.7B-instruct",
+    "name": "DeepseekCoder-6.7B-instruct-Q6_K",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
