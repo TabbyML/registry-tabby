@@ -43,5 +43,16 @@
       "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q6_K.gguf"
     ],
     "sha256": "113fba500e4feb1313ce80d72cf381330b51460d265a7719bba626d6a461f9eb"
+  },
+  {
+    "name": "OpenHermes-2.5-Mistral-7B",
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "provider_url": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+    "urls": [
+      "https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q8_0.gguf"
+    ],
+    "sha256": "1edb516ae5274cf70183d15a6c108e4181fcc318303802a419fd111629b5ca3a"
   }
 ]
