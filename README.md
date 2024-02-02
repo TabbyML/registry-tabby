@@ -22,4 +22,4 @@ To ensure optimal response quality, and given that latency requirements are not 
 | Model ID | License |
 | -------- | ------- |
 | [colefuerth/OpenHermes-2.5-Mistral-7B](https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
-| [colefuerth/OpenGPT-4-8x7B-Q8_0](https://huggingface.co/rombodawg/Open_Gpt4_8x7B_v0.2) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| [colefuerth/Open_Gpt4_8x7B_v0.2-Q6_K](https://huggingface.co/rombodawg/Open_Gpt4_8x7B_v0.2) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
