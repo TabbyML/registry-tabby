@@ -62,7 +62,7 @@
     "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "provider_url": "https://huggingface.co/rombodawg/Open_Gpt4_8x7B_v0.2",
     "urls": [
-      "file:///models/open_gpt4_8x7b_v0.2.Q6_K.gguf"
+      "https://huggingface.co/TheBloke/Open_Gpt4_8x7B_v0.2-GGUF/resolve/main/open_gpt4_8x7b_v0.2.Q6_K.gguf"
     ],
     "sha256": "661b0c46852b28547d2abc8eb4472cae9e48ea34fad4304ccf4a0c3b404c3a25"
   }
