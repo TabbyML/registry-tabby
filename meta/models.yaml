@@ -44,8 +44,8 @@
   <<: &codellama-series
     license_name: Apache 2.0
     license_url: https://choosealicense.com/licenses/apache-2.0/
-    prompt_template: "<PRE> {prefix} <SUF>{suffix} <MID>"
-    # prompt_template: "### HUMAN:\n{prompt}\n\n### RESPONSE:\n"
+    # prompt_template: "<PRE> {prefix} <SUF>{suffix} <MID>"
+    prompt_template: "### HUMAN:\n{prompt}\n\n### RESPONSE:\n"
   <<: *codellama-series
   urls:
   - https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q6_K.gguf
@@ -54,11 +54,6 @@
 
 - name: OpenLlama-3B-instruct-V2-Q8_0
   provider_url: https://huggingface.co/codellama/CodeLlama-7b-hf
-  <<: &codellama-series
-    license_name: Apache 2.0
-    license_url: https://choosealicense.com/licenses/apache-2.0/
-    prompt_template: "<PRE> {prefix} <SUF>{suffix} <MID>"
-    # prompt_template: "### HUMAN:\n{prompt}\n\n### RESPONSE:\n"
   <<: *codellama-series
   urls:
   - https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q8_0.gguf
