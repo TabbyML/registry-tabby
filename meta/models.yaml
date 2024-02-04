@@ -51,6 +51,7 @@
   - https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q6_K.gguf
   sha256: 19391e5cc3edda035a029a1a9fae04d3c3459f0a6a49ec3559569ff84cd1c002
 
+
 - name: OpenLlama-3B-instruct-V2-Q8_0
   provider_url: https://huggingface.co/codellama/CodeLlama-7b-hf
   <<: &codellama-series
