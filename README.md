@@ -13,6 +13,8 @@ We recommend using
 | [colefuerth/DeepseekCoder-1.3B](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [colefuerth/DeepseekCoder-5.7bmqa-base-Q8_0](https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [colefuerth/DeepseekCoder-6.7B-instruct-Q6_K](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
+| [colefuerth/OpenLlama-3B-instruct-V2-Q6_K](https://huggingface.co/codellama/CodeLlama-7b-hf) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| [colefuerth/OpenLlama-3B-instruct-V2-Q8_0](https://huggingface.co/codellama/CodeLlama-7b-hf) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 
 
 ## Chat models (`--chat-model`)

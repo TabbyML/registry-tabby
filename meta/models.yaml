@@ -38,6 +38,32 @@
   - https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q6_K.gguf
   sha256: 113fba500e4feb1313ce80d72cf381330b51460d265a7719bba626d6a461f9eb
 
+
+- name: OpenLlama-3B-instruct-V2-Q6_K
+  provider_url: https://huggingface.co/codellama/CodeLlama-7b-hf
+  <<: &codellama-series
+    license_name: Apache 2.0
+    license_url: https://choosealicense.com/licenses/apache-2.0/
+    prompt_template: "<PRE> {prefix} <SUF>{suffix} <MID>"
+    # prompt_template: "### HUMAN:\n{prompt}\n\n### RESPONSE:\n"
+  <<: *codellama-series
+  urls:
+  - https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q6_K.gguf
+  sha256: 19391e5cc3edda035a029a1a9fae04d3c3459f0a6a49ec3559569ff84cd1c002
+
+- name: OpenLlama-3B-instruct-V2-Q8_0
+  provider_url: https://huggingface.co/codellama/CodeLlama-7b-hf
+  <<: &codellama-series
+    license_name: Apache 2.0
+    license_url: https://choosealicense.com/licenses/apache-2.0/
+    prompt_template: "<PRE> {prefix} <SUF>{suffix} <MID>"
+    # prompt_template: "### HUMAN:\n{prompt}\n\n### RESPONSE:\n"
+  <<: *codellama-series
+  urls:
+  - https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q8_0.gguf
+  sha256: 07bf92495e6310bc343e116089c5c656caf2e8ee479d30eec2804d5a685cc496
+
+
 # CHAT MODELS
   
 - name: OpenHermes-2.5-Mistral-7B
