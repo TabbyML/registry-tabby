@@ -18,10 +18,10 @@
     prompt_template: "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>"
 
   <<: *deepseek-series
-  provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
+  provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
   urls:
-  - https://huggingface.co/TheBloke/deepseek-coder-1.3b-base-GGUF/resolve/main/deepseek-coder-1.3b-base.Q8_0.gguf
-  sha256: 9fcdcb283ef5b1d80ec7365b307c1ceab0c0f8ea079b49969f7febc06a11bccd
+  - https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF/resolve/main/deepseek-coder-1.3b-instruct.Q8_0.gguf
+  sha256: 36eb025121a50ee6d37fe900659393ff8fb5ea34adc0e3c11fc635e07624dcdb
 
 - name: DeepseekCoder-5.7bmqa-base-Q8_0
   <<: *deepseek-series
