@@ -41,10 +41,9 @@
     "name": "CodeLlama-7B",
     "provider_url": "https://huggingface.co/codellama/CodeLlama-7b-hf",
     "urls": [
-      "https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/resolve/main/codellama-7b.Q8_0.gguf",
-      "https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-7B/repo?FilePath=ggml/q8_0.v2.gguf"
+      "https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/resolve/main/codellama-7b.Q8_0.gguf"
     ],
-    "sha256": "2ae20aa293734400f06f0e900a843f6110604c832b94c860b5a41177492c117b"
+    "sha256": "a4eaffa534306e0fc6be5a14cb7db02010546e21fefc32794f000c9b26822db3"
   },
   {
     "license_name": "Llama 2",
@@ -53,10 +52,9 @@
     "name": "CodeLlama-13B",
     "provider_url": "https://huggingface.co/codellama/CodeLlama-13b-hf",
     "urls": [
-      "https://huggingface.co/TheBloke/CodeLlama-13B-GGUF/resolve/main/codellama-13b.Q8_0.gguf",
-      "https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-13B/repo?FilePath=ggml/q8_0.v2.gguf"
+      "https://huggingface.co/TheBloke/CodeLlama-13B-GGUF/resolve/main/codellama-13b.Q8_0.gguf"
     ],
-    "sha256": "bf333bc63648f0130065737e1ef98f9b49064d5bddeaca2c604d17c8b44325b7"
+    "sha256": "85763827a80d9067acdc1cb8ceafd2cd0a2644a87d0cf1cd4b75e8d7b8a2777d"
   },
   {
     "name": "WizardCoder-3B",
@@ -76,9 +74,9 @@
     "provider_url": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://modelscope.cn/api/v1/models/TabbyML/Mistral-7B/repo?FilePath=ggml/q8_0.v2.gguf"
+      "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q8_0.gguf"
     ],
-    "sha256": "5ac3ba2eecc4f41d0cd65a5e6d875d38d4c3dd4ebb1161b85e5134817b484938"
+    "sha256": "ab634d1d552dc60533e486cbcc73ad9b01358994dabf2453230e7fcd77308dc8"
   },
   {
     "license_name": "Deepseek License",
