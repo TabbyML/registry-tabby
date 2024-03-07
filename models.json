@@ -41,6 +41,7 @@
     "name": "CodeLlama-7B",
     "provider_url": "https://huggingface.co/codellama/CodeLlama-7b-hf",
     "urls": [
+      "https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/resolve/main/codellama-7b.Q8_0.gguf",
       "https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-7B/repo?FilePath=ggml/q8_0.v2.gguf"
     ],
     "sha256": "2ae20aa293734400f06f0e900a843f6110604c832b94c860b5a41177492c117b"
@@ -52,6 +53,7 @@
     "name": "CodeLlama-13B",
     "provider_url": "https://huggingface.co/codellama/CodeLlama-13b-hf",
     "urls": [
+      "https://huggingface.co/TheBloke/CodeLlama-13B-GGUF/resolve/main/codellama-13b.Q8_0.gguf",
       "https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-13B/repo?FilePath=ggml/q8_0.v2.gguf"
     ],
     "sha256": "bf333bc63648f0130065737e1ef98f9b49064d5bddeaca2c604d17c8b44325b7"
