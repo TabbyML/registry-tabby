@@ -7,6 +7,7 @@
 
   <<: *starcoder-series
   urls:
+  - https://huggingface.co/TabbyML/models/resolve/main/starcoderbase-1B.Q8_0.gguf
   - https://modelscope.cn/api/v1/models/TabbyML/StarCoder-1B/repo?FilePath=ggml/q8_0.v2.gguf
   sha256: 1bb6441486d102db03dac30c82d6b1029ee4f9f5d73f27444fa58cbfcd7cfa0f
 
@@ -14,6 +15,7 @@
   provider_url: https://huggingface.co/bigcode/starcoderbase-3b
   <<: *starcoder-series
   urls:
+  - https://huggingface.co/TabbyML/models/resolve/main/starcoderbase-3B.Q8_0.gguf
   - https://modelscope.cn/api/v1/models/TabbyML/StarCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf
   sha256: 9798b7cba84ade7c69ff9f033d60c954e16b18f4d01829993b5fe7e33a49ba81
 
