@@ -27,6 +27,20 @@
   - https://modelscope.cn/api/v1/models/TabbyML/StarCoder-7B/repo?FilePath=ggml/q8_0.v2.gguf
   sha256: 33dfcc7e216f1a072b4e16cd3bb19a0e55f5874ed319416435c8fc99216b8bfa
 
+- name: StarCoder2-3B
+  provider_url: https://huggingface.co/bigcode/starcoder2-3b
+  <<: *starcoder-series
+  urls:
+  - https://huggingface.co/nold/starcoder2-3b-GGUF/resolve/main/starcoder2-3b_Q8_0.gguf
+  sha256: 0499b8d046c56934c9741fd00c6206a5f7ca0eb42b59304ab7f4a20cd2f28ebf
+
+- name: StarCoder2-7B
+  provider_url: https://huggingface.co/bigcode/starcoder2-7b
+  <<: *starcoder-series
+  urls:
+  - https://huggingface.co/nold/starcoder2-7b-GGUF/resolve/main/starcoder2-7b_Q8_0.gguf
+  sha256: 72a8a59486cdcc8549e5a17a5c5ec66b6ce5db71a9408a2800985791a40fbff0
+
 - name: CodeLlama-7B
   provider_url: https://huggingface.co/codellama/CodeLlama-7b-hf
   <<: &codellama-series
