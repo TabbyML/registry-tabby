@@ -31,6 +31,14 @@
   sha256: c6f97ac11bf59bd217ac0d42060ad0af07c23ef48c287345937cd26cd8738dfa
 
 
+- name: DeepseekCoder-6.7B-instruct-Q5_K_S
+  <<: *deepseek-series
+  provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
+  urls:
+  - https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q5_K_S.gguf
+  sha256: 1362c06f3036b4c4994bd8497ecbc0b487acb67e568b4addb4b17fc1e863f688
+
+
 - name: DeepseekCoder-6.7B-instruct-Q6_K
   <<: *deepseek-series
   provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
