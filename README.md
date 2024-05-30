@@ -33,5 +33,6 @@ To ensure optimal response quality, and given that latency requirements are not 
 | -------- | ------- |
 | [TabbyML/WizardCoder-3B](https://huggingface.co/WizardLM/WizardCoder-3B-V1.0) | [BigCode-OpenRAIL-M](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) |
 | [TabbyML/Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| [TabbyML/Deepseek-V2-Lite-Chat](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [TabbyML/CodeGemma-7B-Instruct](https://huggingface.co/google/codegemma-7b-it) | [Gemma License](https://ai.google.dev/gemma/terms) |
 | [TabbyML/CodeQwen-7B-Chat](https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat) | [Tongyi Qianwen License](https://github.com/QwenLM/Qwen/blob/main/Tongyi%20Qianwen%20LICENSE%20AGREEMENT) |
