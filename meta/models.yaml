@@ -104,7 +104,7 @@
   provider_url: https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite
   license_name: Deepseek License
   license_url: https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL
-  chat_template: "<｜begin▁of▁sentence｜>{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% elif message['role'] == 'assistant' %}{{ 'Assistant: ' + message['content'] + '<｜end▁of▁sentence｜>' }}{% elif message['role'] == 'system' %}{{ message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ 'Assistant:' }}"
+  chat_template: "{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% elif message['role'] == 'assistant' %}{{ 'Assistant: ' + message['content'] + '<｜end▁of▁sentence｜>' }}{% elif message['role'] == 'system' %}{{ message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ 'Assistant:' }}"
 
   urls:
   - https://huggingface.co/mzwing/DeepSeek-V2-Lite-Chat-GGUF/resolve/main/DeepSeek-V2-Lite-Chat.Q8_0.gguf
