@@ -189,5 +189,15 @@
       "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF/resolve/main/codeqwen-1_5-7b-chat-q8_0.gguf"
     ],
     "sha256": "aeec5c76f5d914ffc5b93cf7197b914be97c1580592a6eb368dc36c8c0c12f28"
+  },
+  {
+    "name": "Nomic-Embed-Text",
+    "provider_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF",
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "urls": [
+      "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/main/nomic-embed-text-v1.5.Q8_0.gguf"
+    ],
+    "sha256": "3e24342164b3d94991ba9692fdc0dd08e3fd7362e0aacc396a9a5c54a544c3b7"
   }
 ]
