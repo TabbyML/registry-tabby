@@ -147,6 +147,17 @@
   - https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/resolve/main/CodeQwen1.5-7B-Q8_0.gguf
   sha256: d9722be0758027d6da9e50df1ec5b2e69e5a3cc1b1851201abb8da07fad0d26d
 
+- name: Qwen2-1.5B-Instruct
+  provider_url: https://huggingface.co/Qwen/Qwen2-1.5B
+  <<: &qwen2-series
+    license_name: Apache 2.0
+    license_url: https://choosealicense.com/licenses/apache-2.0/
+    chat_template: "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}"
+  urls:
+  - https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF/resolve/main/qwen2-1_5b-instruct-q8_0.gguf
+  - https://hf-mirror.com/Qwen/Qwen2-1.5B-Instruct-GGUF/resolve/main/qwen2-1_5b-instruct-q8_0.gguf
+  sha256: 1fabf28bda17e96824bacc29e43b09ec4ba8a82d190f700cbdd1286586a05311
+
 - name: CodeQwen-7B-Chat
   provider_url: https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat
   <<: *codeqwen-series
