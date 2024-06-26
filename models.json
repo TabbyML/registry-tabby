@@ -109,9 +109,9 @@
     "name": "DeepseekCoder-1.3B",
     "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
     "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-1.3b-base-GGUF/resolve/main/deepseek-coder-1.3b-base.Q8_0.gguf"
+      "https://huggingface.co/icycodes/deepseek-coder-1.3b-base-Q8_0-GGUF/resolve/main/deepseek-coder-1.3b-base-q8_0.gguf"
     ],
-    "sha256": "9fcdcb283ef5b1d80ec7365b307c1ceab0c0f8ea079b49969f7febc06a11bccd"
+    "sha256": "f25baf6ed77e1f651af3b5359fadc4e77656621a7660f36624de70d631d110d2"
   },
   {
     "license_name": "Deepseek License",
@@ -120,9 +120,9 @@
     "name": "DeepseekCoder-6.7B",
     "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base",
     "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-base-GGUF/resolve/main/deepseek-coder-6.7b-base.Q8_0.gguf"
+      "https://huggingface.co/icycodes/deepseek-coder-6.7b-base-Q8_0-GGUF/resolve/main/deepseek-coder-6.7b-base-q8_0.gguf"
     ],
-    "sha256": "a2f82242ac5e465037cbf1ed754f04f0be044ee196e1589905f9e4dcd0e6559d"
+    "sha256": "9f9197a8ea01914e7f18f95b0d5d4782bebca4ba8b3e6cf3e5b2f369fa9b88ad"
   },
   {
     "name": "Deepseek-V2-Lite-Chat",
