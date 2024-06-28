@@ -90,16 +90,6 @@
   - https://huggingface.co/icycodes/deepseek-coder-6.7b-base-Q8_0-GGUF/resolve/main/deepseek-coder-6.7b-base-q8_0.gguf
   sha256: 9f9197a8ea01914e7f18f95b0d5d4782bebca4ba8b3e6cf3e5b2f369fa9b88ad
 
-- name: Deepseek-V2-Lite-Chat
-  provider_url: https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite
-  license_name: Deepseek License
-  license_url: https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL
-  chat_template: "<｜begin▁of▁sentence｜>{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% elif message['role'] == 'assistant' %}{{ 'Assistant: ' + message['content'] + '<｜end▁of▁sentence｜>' }}{% elif message['role'] == 'system' %}{{ message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ 'Assistant:' }}"
-
-  urls:
-  - https://huggingface.co/mzwing/DeepSeek-V2-Lite-Chat-GGUF/resolve/main/DeepSeek-V2-Lite-Chat.Q8_0.gguf
-  sha256: 9d1a9d6b04718d83c294564c7d54f04f323181f9f7578e269597051e2504fdcc
-
 - name: CodeGemma-2B
   provider_url: https://huggingface.co/google/codegemma-2b
   <<: &codegemma-series
