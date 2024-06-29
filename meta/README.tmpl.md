@@ -16,7 +16,7 @@ We have published benchmarks for these models on https://leaderboard.tabbyml.com
 
 ## Chat models (`--chat-model`)
 
-To ensure optimal response quality, and given that latency requirements are not stringent in this scenario, we recommend using a model with at least 3B parameters.
+To ensure optimal response quality, and given that latency requirements are not stringent in this scenario, we recommend using a model with at least 1B parameters.
 
 | Model ID | License |
 | -------- | ------- |
