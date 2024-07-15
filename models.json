@@ -192,6 +192,18 @@
     "sha256": "4f9ad7e24043cf3ec19002737019f0798ebe1cecbfecba2e047ea07b92721ac0"
   },
   {
+    "license_name": "Mistral AI Non-Production License",
+    "license_url": "https://mistral.ai/licenses/MNPL-0.1.md",
+    "name": "Codestral-22B-q6",
+    "provider_url": "https://huggingface.co/mistralai/Codestral-22B-v0.1",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF/resolve/main/Codestral-22B-v0.1-Q6_K.gguf"
+    ],
+    "sha256": "107e1f2914bf7bac5bd43c4363f738728ba455b6bc62c590df342365ec3f8b3e"
+  },
+  {
     "name": "Nomic-Embed-Text",
     "provider_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF",
     "license_name": "Apache 2.0",
