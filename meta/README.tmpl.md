@@ -11,7 +11,7 @@ We have published benchmarks for these models on https://leaderboard.tabbyml.com
 
 | Model ID | License |
 | -------- | ------- |
-{% for item in completion_models %}| [TabbyML/{{ item.name }}]({{ item.provider_url }}) | [{{ item.license_name }}]({{ item.license_url }}) |
+{% for item in completion_models %}| [{{ item.name }}]({{ item.provider_url }}) | [{{ item.license_name }}]({{ item.license_url }}) |
 {% endfor %}
 
 ## Chat models (`--chat-model`)
@@ -20,5 +20,12 @@ To ensure optimal response quality, and given that latency requirements are not 
 
 | Model ID | License |
 | -------- | ------- |
-{% for item in chat_models %}| [TabbyML/{{ item.name }}]({{ item.provider_url }}) | [{{ item.license_name }}]({{ item.license_url }}) |
+{% for item in chat_models %}| [{{ item.name }}]({{ item.provider_url }}) | [{{ item.license_name }}]({{ item.license_url }}) |
+{% endfor %}
+
+## Embedding models
+
+| Model ID | License |
+| -------- | ------- |
+{% for item in embedding_models %}| [{{ item.name }}]({{ item.provider_url }}) | [{{ item.license_name }}]({{ item.license_url }}) |
 {% endfor %}

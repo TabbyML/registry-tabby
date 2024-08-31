@@ -223,5 +223,15 @@
       "https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Base-GGUF/resolve/main/DeepSeek-Coder-V2-Lite-Base-Q8_0.gguf"
     ],
     "sha256": "22cef614d5b3e1d00ece317ded91c48046f1a6f24618639dea110fbc22e5f86c"
+  },
+  {
+    "name": "Jina-Embeddings-V2-Code",
+    "provider_url": "https://huggingface.co/jinaai/jina-embeddings-v2-base-code",
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "urls": [
+      "https://huggingface.co/wsxiaoys/jina-embeddings-v2-base-code-Q8_0-GGUF/resolve/main/jina-embeddings-v2-base-code-q8_0.gguf"
+    ],
+    "sha256": "a31e5c2a10b5820b7e8a7bd9764495b3c7de1366f37ccff5ed9408116fc522d8"
   }
 ]

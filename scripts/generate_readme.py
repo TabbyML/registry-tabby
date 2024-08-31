@@ -12,8 +12,9 @@ with open("models.json", "r") as f:
 
 completion_models = [x for x in models if 'prompt_template' in x]
 chat_models = [x for x in models if 'chat_template' in x]
+embedding_models = [x for x in models if 'chat_template' not in x and 'prompt_template' not in x]
 
-rendered_template = template.render(completion_models=completion_models, chat_models=chat_models)
+rendered_template = template.render(completion_models=completion_models, chat_models=chat_models, embedding_models=embedding_models)
 
 with open("README.md", "w") as f:
     f.write(rendered_template)
