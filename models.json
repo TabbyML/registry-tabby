@@ -239,7 +239,7 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "name": "Qwen2.5-Coder-7B-Instruct",
     "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
-    "partitioned_urls": [{
+    "partition_urls": [{
       "urls":[
         "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/qwen2.5-coder-7b-instruct-q8_0-00001-of-00003.gguf"
       ],
