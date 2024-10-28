@@ -196,7 +196,8 @@
         ],
         "sha256": "478f6a6b37072eeda02a98a59b6ef0b1a9131c9eae9a1181b6077f5e255fa6b2"
       }
-    ]
+    ],
+    "sha256": ""
   },
   {
     "license_name": "Apache 2.0",
