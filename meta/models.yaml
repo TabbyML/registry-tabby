@@ -135,7 +135,7 @@
   - https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF/resolve/main/codeqwen-1_5-7b-chat-q8_0.gguf
   sha256: aeec5c76f5d914ffc5b93cf7197b914be97c1580592a6eb368dc36c8c0c12f28
 
-- name: Qwen2.5-Coder-7B-Instruct
+- name: Qwen2.5-Coder-7B
   provider_url: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF
   <<: &qwen25-coder-series
     license_name: Apache 2.0
@@ -157,7 +157,7 @@
     "sha256": "478f6a6b37072eeda02a98a59b6ef0b1a9131c9eae9a1181b6077f5e255fa6b2"
   sha256: "" # empty sha256 for not breaking versions before v0.18.0
 
-- name: Qwen2.5-Coder-1.5B-Instruct
+- name: Qwen2.5-Coder-1.5B
   provider_url: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF
   <<: *qwen25-coder-series
   partition_urls:
