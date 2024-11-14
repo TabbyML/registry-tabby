@@ -302,6 +302,84 @@
     "sha256": ""
   },
   {
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "Qwen2.5-Coder-0.5B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B",
+    "partition_urls": [
+      {
+        "urls": [
+          "https://huggingface.co/ikw/Qwen2.5-Coder-0.5B-GGUF/resolve/main/qwen2.5-coder-0.5b-q8_0.gguf"
+        ],
+        "sha256": "a563b0822d92aa051118fe9e2a1bea30802ead74e464980cbeac058041daed6a"
+      }
+    ],
+    "sha256": ""
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "Qwen2.5-Coder-1.5B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B",
+    "partition_urls": [
+      {
+        "urls": [
+          "https://huggingface.co/ikw/Qwen2.5-Coder-1.5B-GGUF/resolve/main/qwen2.5-coder-1.5b-q8_0.gguf"
+        ],
+        "sha256": "116f205cba3d96dfd6b6c1e37bef6149a6722c62687621200be218314eb2851b"
+      }
+    ],
+    "sha256": ""
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "Qwen2.5-Coder-3B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B",
+    "partition_urls": [
+      {
+        "urls": [
+          "https://huggingface.co/ikw/Qwen2.5-Coder-3B-GGUF/resolve/main/qwen2.5-coder-3b-q8_0.gguf"
+        ],
+        "sha256": "db1141ead601b85a0a7acd00d318d83712201db89dc552f9b79952bf6cc89ab8"
+      }
+    ],
+    "sha256": ""
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "Qwen2.5-Coder-7B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+    "partition_urls": [
+      {
+        "urls": [
+          "https://huggingface.co/ikw/Qwen2.5-Coder-7B-GGUF/resolve/main/qwen2.5-coder-7b-q8_0.gguf"
+        ],
+        "sha256": "c80bf23d37f5e17f182c67302fdc4b141502ec50e10cf8464f22e522db3bd288"
+      }
+    ],
+    "sha256": ""
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "Qwen2.5-Coder-14B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B",
+    "partition_urls": [
+      {
+        "urls": [
+          "https://huggingface.co/ikw/Qwen2.5-Coder-14B-GGUF/resolve/main/qwen2.5-coder-14b-q8_0.gguf"
+        ],
+        "sha256": "3d2abf8f771767667ff66cc10a5db27421b8f0891d8af42b7c18eba8b5c33eec"
+      }
+    ],
+    "sha256": ""
+  },
+  {
     "license_name": "Apache 2.0",
     "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
