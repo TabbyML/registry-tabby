@@ -225,6 +225,7 @@
   provider_url: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
   <<: &qwen25-coder-series-completion
     prompt_template: "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>"
+  <<: *qwen25-coder-series
   partition_urls:
   - urls:
     - "https://huggingface.co/ikw/Qwen2.5-Coder-0.5B-GGUF/resolve/main/qwen2.5-coder-0.5b-q8_0.gguf"

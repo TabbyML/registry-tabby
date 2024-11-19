@@ -23,7 +23,7 @@ We have published benchmarks for these models on https://leaderboard.tabbyml.com
 | [CodeGemma-2B](https://huggingface.co/google/codegemma-2b) | [Gemma License](https://ai.google.dev/gemma/terms) |
 | [CodeGemma-7B](https://huggingface.co/google/codegemma-7b) | [Gemma License](https://ai.google.dev/gemma/terms) |
 | [CodeQwen-7B](https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat) | [Tongyi Qianwen License](https://github.com/QwenLM/Qwen/blob/main/Tongyi%20Qianwen%20LICENSE%20AGREEMENT) |
-| [Qwen2.5-Coder-0.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B) | []() |
+| [Qwen2.5-Coder-0.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [Qwen2.5-Coder-1.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [Qwen2.5-Coder-3B](https://huggingface.co/Qwen/Qwen2.5-Coder-3B) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [Qwen2.5-Coder-7B](https://huggingface.co/Qwen/Qwen2.5-Coder-7B) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |

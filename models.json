@@ -303,6 +303,8 @@
   },
   {
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "name": "Qwen2.5-Coder-0.5B",
     "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B",
     "partition_urls": [
