@@ -119,3 +119,16 @@
   # - file:///models/open_gpt4_8x7b_v0.2.Q6_K.gguf # since this file is massive I am going to download one of them and just have two urls
   - https://huggingface.co/TheBloke/Open_Gpt4_8x7B_v0.2-GGUF/resolve/main/open_gpt4_8x7b_v0.2.Q6_K.gguf
   sha256: 661b0c46852b28547d2abc8eb4472cae9e48ea34fad4304ccf4a0c3b404c3a25
+
+- name: DeepSeek-R1-Distill-Qwen-14B-GGUF
+  <<: &deepseek-chat-series
+    license_name: Apache 2.0
+    license_url: https://choosealicense.com/licenses/apache-2.0/
+    chat_template: "message['content']"
+  <<: *deepseek-chat-series
+  provider_url: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF
+  urls:
+  # - file:///models/open_gpt4_8x7b_v0.2.Q6_K.gguf # since this file is massive I am going to download one of them and just have two urls
+  - https://huggingface.co//unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-7B-Q8_0.gguf
+  sha256: 7307bfbb539fd2e8ed636315440781fed23140dc7f911f64b33418f5b978281b
+
