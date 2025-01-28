@@ -67,15 +67,26 @@
     "sha256": "113fba500e4feb1313ce80d72cf381330b51460d265a7719bba626d6a461f9eb"
   },
   {
-    "name": "DeepseekCoder-R1-Distill-Qwen-7B-Q6_K",
+    "name": "Deepseek-R1-Distill-Qwen-7B-Q6_K",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
     "provider_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
     "urls": [
-      "https://huggingface.co/SquareWheelBike/deepseek-r1-qwen-7b-gguf/resolve/main/r1-qwen-7b-Q6_K.gguf"
+      "https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-7B-Q6_K.gguf"
     ],
-    "sha256": "7390703d34683aa757defe609bdd60f3170165548c258135ffcb7f45a1b408a6"
+    "sha256": "b18730fc1e8aa76fb7f1362e3a64569d552bded540c256f11940ecfd5df6522c"
+  },
+  {
+    "name": "Deepseek-R1-Distill-Llama-8B-Q6_K",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "provider_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "urls": [
+      "https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF/resolve/main/DeepSeek-R1-Distill-Llama-8B-Q6_K.gguf"
+    ],
+    "sha256": "6277b5d729562f2e01436c81b919b5b69084022560c77c98d72a5d6fc215f13e"
   },
   {
     "name": "OpenLlama-3B-instruct-V2-Q6_K",

@@ -15,7 +15,8 @@ We recommend using
 | [colefuerth/DeepseekCoder-V2-Lite-Instruct-IQ3_XXS](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [colefuerth/DeepseekCoder-6.7B-instruct-Q5_K_S](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [colefuerth/DeepseekCoder-6.7B-instruct-Q6_K](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
-| [colefuerth/DeepseekCoder-R1-Distill-Qwen-7B-Q6_K](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
+| [colefuerth/Deepseek-R1-Distill-Qwen-7B-Q6_K](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
+| [colefuerth/Deepseek-R1-Distill-Llama-8B-Q6_K](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [colefuerth/OpenLlama-3B-instruct-V2-Q6_K](https://huggingface.co/codellama/CodeLlama-7b-hf) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [colefuerth/OpenLlama-3B-instruct-V2-Q8_0](https://huggingface.co/codellama/CodeLlama-7b-hf) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 
