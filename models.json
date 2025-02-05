@@ -94,7 +94,7 @@
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "name": "DeepseekCoder-1.3B",
+    "name": "DeepSeekCoder-1.3B",
     "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
     "urls": [
       "https://huggingface.co/icycodes/deepseek-coder-1.3b-base-Q8_0-GGUF/resolve/main/deepseek-coder-1.3b-base-q8_0.gguf"
@@ -105,7 +105,7 @@
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "name": "DeepseekCoder-6.7B",
+    "name": "DeepSeekCoder-6.7B",
     "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base",
     "urls": [
       "https://huggingface.co/icycodes/deepseek-coder-6.7b-base-Q8_0-GGUF/resolve/main/deepseek-coder-6.7b-base-q8_0.gguf"
