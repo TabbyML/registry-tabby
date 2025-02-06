@@ -70,7 +70,7 @@
   - https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q8_0.gguf
   sha256: ab634d1d552dc60533e486cbcc73ad9b01358994dabf2453230e7fcd77308dc8
 
-- name: DeepseekCoder-1.3B
+- name: DeepSeekCoder-1.3B
   <<: &deepseek-series
     license_name: Deepseek License
     license_url: https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL
@@ -82,7 +82,7 @@
   - https://huggingface.co/icycodes/deepseek-coder-1.3b-base-Q8_0-GGUF/resolve/main/deepseek-coder-1.3b-base-q8_0.gguf
   sha256: f25baf6ed77e1f651af3b5359fadc4e77656621a7660f36624de70d631d110d2
 
-- name: DeepseekCoder-6.7B
+- name: DeepSeekCoder-6.7B
   <<: *deepseek-series
   provider_url: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
 
