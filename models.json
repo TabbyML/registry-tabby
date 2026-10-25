@@ -638,5 +638,15 @@
       "https://huggingface.co/wsxiaoys/Yi-Coder-9B-Chat-Q8_0-GGUF/resolve/main/yi-coder-9b-chat-q8_0.gguf"
     ],
     "sha256": "23b4408c9a621bc563ed9f998a7929776ba50f5102ed2c2436b2f917404b05e7"
+  },
+  {
+    "name": "Code-Embed-V2",
+    "provider_url": "https://huggingface.co/divakantpandey/code-embed-v2",
+    "license_name": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "urls": [
+      "https://huggingface.co/divakantpandey/code-embed-v2/resolve/main/code-embed-v2-q8_0.gguf"
+    ],
+    "sha256": "2dac1363b064747ab87abe020e2a1c9e79e12cb31e8ffd93d9b584ad2160dc33"
   }
 ]
